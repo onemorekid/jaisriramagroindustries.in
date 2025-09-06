@@ -64,3 +64,17 @@
     height: 200px;
     object-fit: cover;
 }
+
+.service-icon-container {
+    background-color: #E67E22;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%; /* To make it take full width of the card */
+}
+
+.service-icon-container .fas {
+    font-size: 5em; /* Adjust as needed */
+}
