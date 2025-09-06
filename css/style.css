@@ -1,0 +1,66 @@
+.hero-section {
+    background-color: #E67E22;
+    color: #333333;
+    padding: 100px 0;
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+
+    .hero-section p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        padding: 60px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+}
+
+.btn-hero {
+    background-color: #2C3E50;
+    border-color: #2C3E50;
+    color: #ffffff;
+}
+
+.btn-hero:hover {
+    background-color: #34495E;
+    border-color: #34495E;
+    color: #ffffff;
+}
+
+.navbar-brand-custom {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-brand-custom img {
+    height: 60px;
+}
+
+.service-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
