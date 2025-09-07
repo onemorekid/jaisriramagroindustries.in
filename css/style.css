@@ -77,4 +77,41 @@
 
 .service-icon-container .fas {
     font-size: 5em; /* Adjust as needed */
+    color: #ffffff; /* Ensure icon color is white */
+}
+
+.product-card {
+    height: 100%; /* Ensure card takes full height of its column */
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card .card-img-top {
+    height: 200px; /* Fixed height for images */
+    object-fit: contain; /* Contain the image within the area, showing complete picture */
+}
+
+.product-card .card-body {
+    flex-grow: 1; /* Allow card body to grow and take available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top */
+}
+
+.product-card .card-title {
+    margin-bottom: 0.5rem; /* Add some space below the title */
+}
+
+.product-card .card-text {
+    flex-grow: 1; /* Allow text to take available space */
+}
+
+#contact .row > .col-md-4:not(:last-child) {
+    border-right: 1px solid #ccc; /* Add a vertical line to the right of each column except the last */
+}
+
+@media (max-width: 767.98px) {
+    #contact .row > .col-md-4:not(:last-child) {
+        border-right: none; /* Remove vertical line on small screens */
+    }
 }
