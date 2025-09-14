@@ -80,6 +80,54 @@
     color: #ffffff; /* Ensure icon color is white */
 }
 
+.service-icon-container .service-icon {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+.service-icon-container .service-icon {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+}
+
+.service-icon-container .service-icon {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+}
+
+.service-icon-container .service-icon {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+}
+
+.service-icon-container .service-icon {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+}
+
+.service-icon-container .service-icon {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+}
+
+.service-icon-container .service-icon {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+}
+
+.service-icon-container .service-icon {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+}
+
 .product-card {
     height: 100%; /* Ensure card takes full height of its column */
     display: flex;
@@ -88,7 +136,7 @@
 
 .product-card .card-img-top {
     height: 200px; /* Fixed height for images */
-    object-fit: contain; /* Contain the image within the area, showing complete picture */
+    object-fit: cover; /* Cover the area, cropping if necessary */
 }
 
 .product-card .card-body {
