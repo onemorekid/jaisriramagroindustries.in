@@ -1,16 +1,19 @@
 .hero-section {
-    background-color: #E67E22;
-    color: #333333;
+    background: url('../images/grapes_farm.png') no-repeat center center;
+    background-size: cover;
+    color: #ffffff;
     padding: 100px 0;
 }
 
 .hero-section h1 {
     font-size: 4rem;
     font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .hero-section p {
     font-size: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 @media (max-width: 768px) {
