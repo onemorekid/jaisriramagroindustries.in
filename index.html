@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jai Sri Ram Agro Industries</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&family=Zilla+Slab:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -51,6 +54,39 @@
                 <h1>Welcome to Jai Sri Ram Agro Industries</h1>
                 <p>Your one-stop solution for all your needs.</p>
                 <a href="#contact" class="btn btn-primary btn-hero">Contact Us</a>
+            </div>
+        </section>
+
+        <!-- Shop by Category -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="mb-5">Shop by Category</h2>
+                <div class="category-grid">
+                    <a href="#products" class="category-item">
+                        <div class="category-image-wrapper">
+                            <img src="images/golden-dried.png" alt="Raisins">
+                        </div>
+                        <div class="category-title">Raisins</div>
+                    </a>
+                    <a href="#products" class="category-item">
+                        <div class="category-image-wrapper">
+                            <img src="images/lemons.png" alt="Fresh Lemons">
+                        </div>
+                        <div class="category-title">Fresh Lemons</div>
+                    </a>
+                    <a href="#services" class="category-item">
+                        <div class="category-image-wrapper">
+                            <img src="images/sorting.png" alt="Processing">
+                        </div>
+                        <div class="category-title">Services</div>
+                    </a>
+                    <a href="#contact" class="category-item">
+                        <div class="category-image-wrapper">
+                            <img src="images/about-us.jpeg" alt="Bulk Orders">
+                        </div>
+                        <div class="category-title">Bulk Orders</div>
+                    </a>
+                </div>
             </div>
         </section>
 
@@ -133,62 +169,110 @@
 
         <section id="products" class="py-5 bg-light">
             <div class="container">
-                <h2 class="text-center">Our Products</h2>
-                <p class="text-center">Discover the range of high-quality agricultural products we offer.</p>
+                <h2 class="text-center">Our Premium Products</h2>
+                <p class="text-center mb-5">Handpicked and processed with care to ensure the highest quality for our customers.</p>
                 <div class="row">
+                    <!-- Product 1 -->
                     <div class="col-md-4 mb-4">
-                        <div class="card product-card h-100">
-                            <img src="images/black-dried-raisins.jpg" class="card-img-top" alt="Black Dried Raisins">
-                            <div class="card-body">
-                                <h5 class="card-title">Black Dried Raisins</h5>
-                                <p class="card-text">Premium quality black dried raisins, perfect for snacking or baking.</p>
+                        <div class="product-card-v2 position-relative">
+                            <span class="badge-new">BESTSELLER</span>
+                            <div class="image-container">
+                                <img src="images/golden-dried.png" alt="Golden Dried Raisins">
+                            </div>
+                            <div class="product-info text-center">
+                                <div class="product-category">Dry Fruits</div>
+                                <h3 class="product-name">Premium Golden Dried Raisins</h3>
+                                <div class="product-price">Export Quality</div>
+                                <a href="#contact" class="btn btn-primary btn-add-to-cart">Inquire Now</a>
                             </div>
                         </div>
                     </div>
+                    <!-- Product 2 -->
                     <div class="col-md-4 mb-4">
-                        <div class="card product-card h-100">
-                            <img src="images/brown-dried-raisins.webp" class="card-img-top" alt="Brown Dried Raisins">
-                            <div class="card-body">
-                                <h5 class="card-title">Brown Dried Raisins</h5>
-                                <p class="card-text">Naturally sweet brown dried raisins, a healthy and delicious treat.</p>
+                        <div class="product-card-v2 position-relative">
+                            <div class="image-container">
+                                <img src="images/black-dried-raisins.jpg" alt="Black Dried Raisins">
+                            </div>
+                            <div class="product-info text-center">
+                                <div class="product-category">Dry Fruits</div>
+                                <h3 class="product-name">Organic Black Dried Raisins</h3>
+                                <div class="product-price">Rich in Antioxidants</div>
+                                <a href="#contact" class="btn btn-primary btn-add-to-cart">Inquire Now</a>
                             </div>
                         </div>
                     </div>
+                    <!-- Product 3 -->
                     <div class="col-md-4 mb-4">
-                        <div class="card product-card h-100">
-                            <img src="images/golden-dried.png" class="card-img-top" alt="Golden Dried Raisins">
-                            <div class="card-body">
-                                <h5 class="card-title">Golden Dried Raisins</h5>
-                                <p class="card-text">Sun-kissed golden dried raisins, known for their vibrant color and sweet taste.</p>
+                        <div class="product-card-v2 position-relative">
+                            <div class="image-container">
+                                <img src="images/malayar-dried.jpg" alt="Malayar Raisins">
+                            </div>
+                            <div class="product-info text-center">
+                                <div class="product-category">Dry Fruits</div>
+                                <h3 class="product-name">Special Malayar Dried Raisins</h3>
+                                <div class="product-price">Sweet & Tangy</div>
+                                <a href="#contact" class="btn btn-primary btn-add-to-cart">Inquire Now</a>
                             </div>
                         </div>
                     </div>
+                    <!-- Product 4 -->
                     <div class="col-md-4 mb-4">
-                        <div class="card product-card h-100">
-                            <img src="images/green-dried.jpg" class="card-img-top" alt="Green Dried Raisins">
-                            <div class="card-body">
-                                <h5 class="card-title">Green Dried Raisins</h5>
-                                <p class="card-text">Fresh and tangy green dried raisins, a unique addition to your diet.</p>
+                        <div class="product-card-v2 position-relative">
+                            <div class="image-container">
+                                <img src="images/green-dried.jpg" alt="Green Dried Raisins">
+                            </div>
+                            <div class="product-info text-center">
+                                <div class="product-category">Dry Fruits</div>
+                                <h3 class="product-name">Farm Fresh Green Raisins</h3>
+                                <div class="product-price">Naturally Dried</div>
+                                <a href="#contact" class="btn btn-primary btn-add-to-cart">Inquire Now</a>
                             </div>
                         </div>
                     </div>
+                    <!-- Product 5 -->
                     <div class="col-md-4 mb-4">
-                        <div class="card product-card h-100">
-                            <img src="images/malayar-dried.jpg" class="card-img-top" alt="Malayar Raisins">
-                            <div class="card-body">
-                                <h5 class="card-title">Malayar Raisins</h5>
-                                <p class="card-text">Exotic Malayar raisins, offering a distinct flavor and texture.</p>
+                        <div class="product-card-v2 position-relative">
+                            <div class="image-container">
+                                <img src="images/brown-dried-raisins.webp" alt="Brown Dried Raisins">
+                            </div>
+                            <div class="product-info text-center">
+                                <div class="product-category">Dry Fruits</div>
+                                <h3 class="product-name">Premium Brown Dried Raisins</h3>
+                                <div class="product-price">Classic Taste</div>
+                                <a href="#contact" class="btn btn-primary btn-add-to-cart">Inquire Now</a>
                             </div>
                         </div>
                     </div>
+                    <!-- Product 6 -->
                     <div class="col-md-4 mb-4">
-                        <div class="card product-card h-100">
-                            <img src="images/industrieal-grade.jpg" class="card-img-top" alt="Industrial Grade Raisins">
-                            <div class="card-body">
-                                <h5 class="card-title">Industrial Grade Raisins</h5>
-                                <p class="card-text">High-quality industrial grade raisins, suitable for various food processing applications.</p>
+                        <div class="product-card-v2 position-relative">
+                            <div class="image-container">
+                                <img src="images/industrieal-grade.jpg" alt="Industrial Grade Raisins">
+                            </div>
+                            <div class="product-info text-center">
+                                <div class="product-category">Bulk / Industrial</div>
+                                <h3 class="product-name">Industrial Grade Raisins</h3>
+                                <div class="product-price">For Food Processing</div>
+                                <a href="#contact" class="btn btn-primary btn-add-to-cart">Inquire Now</a>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Story Section -->
+        <section class="py-5 bg-white">
+            <div class="container">
+                <div class="row g-0 align-items-center shadow-sm" style="background: #fff8f8; border-radius: 15px; overflow: hidden;">
+                    <div class="col-md-6">
+                        <img src="images/grapes_farm.png" class="img-fluid" alt="Our Farm" style="min-height: 400px; width: 100%; object-fit: cover;">
+                    </div>
+                    <div class="col-md-6 p-5">
+                        <div class="product-category" style="color: var(--primary-color); font-weight: 600; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px;">Authentic & Pure</div>
+                        <h2 class="text-start mb-4" style="color: var(--text-color);">Direct from the Farm to Your Table</h2>
+                        <p class="mb-4">At Jai Sri Ram Agro Industries, we believe in the purity of nature. Our raisins are sun-dried and processed using state-of-the-art technology to ensure that you get the most authentic taste and highest nutritional value in every bite. We take pride in our heritage and our commitment to quality.</p>
+                        <a href="#about" class="btn btn-outline-primary" style="color: var(--primary-color); border-color: var(--primary-color); padding: 10px 25px;">Learn Our Story</a>
                     </div>
                 </div>
             </div>
@@ -215,8 +299,8 @@
                             </div>
                             <div class="col-md-4 mb-4">
                                 <h3>Our Address</h3>
-                                <p>JAI SRI RAM Agro Industries<br>At Post - Halasangi<br>Taluk - Chadachan<br>Dist - Vijapur<br>586207</p>
-                                <p><a href="https://www.google.com/maps/search/?api=1&query=JAI%20SRI%20RAM%20Agro%20Industries,%20Halasangi,%20Chadachan,%20Vijapur,%20586207" target="_blank">View on Google Maps</a></p>
+                                <p>JAI SRI RAM Agro Industries<br>At Post - Halasangi<br>Taluk - Chadachan<br>Dist - Vijayapura<br>586207</p>
+                                <p><a href="https://www.google.com/maps/search/?api=1&query=JAI%20SRI%20RAM%20Agro%20Industries,%20Halasangi,%20Chadachan,%20Vijayapura,%20586207" target="_blank">View on Google Maps</a></p>
                             </div>
                         </div>
                     </div>

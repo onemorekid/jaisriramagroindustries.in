@@ -1,168 +1,384 @@
-.hero-section {
-    background: url('../images/grapes_farm.png') no-repeat center center;
-    background-size: cover;
-    color: #ffffff;
-    padding: 100px 0;
+/* Adukale Inspired Styles for Jai Sri Ram Agro Industries */
+
+:root {
+    --primary-color: #D14545; /* Adukale Red */
+    --primary-hover: #b03a3a;
+    --text-color: #333333;
+    --text-light: #757575;
+    --bg-light: #fdfbf7; /* Warm cream background */
+    --font-heading: 'Zilla Slab', serif;
+    --font-body: 'Work Sans', sans-serif;
 }
 
-.hero-section h1 {
-    font-size: 4rem;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+body {
+    font-family: var(--font-body);
+    color: var(--text-color);
+    background-color: var(--bg-light);
+    line-height: 1.6;
 }
 
-.hero-section p {
-    font-size: 1.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+.bg-light {
+    background-color: var(--bg-light) !important;
 }
 
-@media (max-width: 768px) {
-    .hero-section h1 {
-        font-size: 3rem;
-    }
-
-    .hero-section p {
-        font-size: 1.2rem;
-    }
+h1, h2, h3, h4, h5, h6, .navbar-brand-custom {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    color: var(--text-color);
 }
 
-@media (max-width: 576px) {
-    .hero-section {
-        padding: 60px 0;
-    }
-
-    .hero-section h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero-section p {
-        font-size: 1rem;
-    }
-}
-
-.btn-hero {
-    background-color: #2C3E50;
-    border-color: #2C3E50;
-    color: #ffffff;
-}
-
-.btn-hero:hover {
-    background-color: #34495E;
-    border-color: #34495E;
-    color: #ffffff;
+/* Navbar */
+.navbar {
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 15px 0;
 }
 
 .navbar-brand-custom {
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.6rem;
+    color: var(--primary-color) !important;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .navbar-brand-custom img {
-    height: 60px;
+    height: 50px;
 }
 
-.service-card .card-img-top {
-    height: 200px;
+.nav-link {
+    font-weight: 500;
+    color: var(--text-color) !important;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    font-family: var(--font-body);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 25px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+    box-shadow: 0 4px 10px rgba(209, 69, 69, 0.3);
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+}
+
+.btn-hero {
+    font-size: 1.1rem;
+    padding: 15px 35px;
+    border-radius: 50px;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/grapes_farm.png') no-repeat center center;
+    background-size: cover;
+    color: #ffffff;
+    padding: 120px 0;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-family: var(--font-body);
+}
+
+/* Sections */
+section {
+    padding: 80px 0;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 220px;
     object-fit: cover;
 }
 
+.card-body {
+    padding: 25px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.card-text {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+/* Services Icons */
 .service-icon-container {
-    background-color: #E67E22;
-    color: #ffffff;
+    background-color: #fcebeb;
+    color: var(--primary-color);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
-    width: 100%; /* To make it take full width of the card */
+    height: 220px;
+    width: 100%;
 }
 
 .service-icon-container .fas {
-    font-size: 5em; /* Adjust as needed */
-    color: #ffffff; /* Ensure icon color is white */
+    font-size: 4em;
+    color: var(--primary-color);
 }
 
-.service-icon-container .service-icon {
-    max-height: 100%;
-    width: auto;
-    object-fit: contain;
+/* About Section */
+#about {
+    background-color: #ffffff;
 }
 
-.service-icon-container .service-icon {
-    height: 100px;
-    width: 100px;
-    object-fit: contain;
+#about p {
+    color: var(--text-light);
+    font-size: 1.1rem;
 }
 
-.service-icon-container .service-icon {
-    height: 100px;
-    width: 100px;
-    object-fit: contain;
+#about img {
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
 }
 
-.service-icon-container .service-icon {
-    height: 100px;
-    width: 100px;
-    object-fit: contain;
+/* Contact Section */
+#contact {
+    background-color: #ffffff;
 }
 
-.service-icon-container .service-icon {
-    height: 100px;
-    width: 100px;
-    object-fit: contain;
+#contact .row.bg-light {
+    background-color: var(--bg-light) !important;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
 }
 
-.service-icon-container .service-icon {
-    height: 100px;
-    width: 100px;
-    object-fit: contain;
+#contact h3 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
 }
 
-.service-icon-container .service-icon {
-    height: 100px;
-    width: 100px;
-    object-fit: contain;
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    color: var(--text-color) !important;
+    transition: all 0.3s ease;
 }
 
-.service-icon-container .service-icon {
-    height: 100px;
-    width: 100px;
-    object-fit: contain;
+.social-icons a:hover {
+    background-color: var(--primary-color);
+    color: #ffffff !important;
 }
 
-.product-card {
-    height: 100%; /* Ensure card takes full height of its column */
+/* Footer */
+footer {
+    background-color: #2b2b2b !important;
+    color: #ffffff;
+    font-family: var(--font-body);
+}
+
+/* Category Circles Template */
+.category-grid {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 50px;
 }
 
-.product-card .card-img-top {
-    height: 200px; /* Fixed height for images */
-    object-fit: cover; /* Cover the area, cropping if necessary */
+.category-item {
+    text-align: center;
+    width: 150px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-.product-card .card-body {
-    flex-grow: 1; /* Allow card body to grow and take available space */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Align content to the top */
+.category-item:hover {
+    transform: translateY(-5px);
 }
 
-.product-card .card-title {
-    margin-bottom: 0.5rem; /* Add some space below the title */
+.category-image-wrapper {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 15px;
+    border: 3px solid #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
 }
 
-.product-card .card-text {
-    flex-grow: 1; /* Allow text to take available space */
+.category-item:hover .category-image-wrapper {
+    border-color: var(--primary-color);
 }
 
-#contact .row > .col-md-4:not(:last-child) {
-    border-right: 1px solid #ccc; /* Add a vertical line to the right of each column except the last */
+.category-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-@media (max-width: 767.98px) {
+.category-title {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+/* Bestseller / Product Card V2 */
+.product-card-v2 {
+    border: 1px solid #f0f0f0;
+    border-radius: 12px;
+    padding: 15px;
+    background: #fff;
+    text-align: left;
+    height: 100%;
+}
+
+.product-card-v2 .badge-new {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: var(--primary-color);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    z-index: 2;
+}
+
+.product-card-v2 .image-container {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f9f9f9;
+    margin-bottom: 15px;
+}
+
+.product-card-v2 img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+}
+
+.product-card-v2:hover img {
+    transform: scale(1.05);
+}
+
+.product-info {
+    padding: 5px;
+}
+
+.product-category {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.product-name {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    color: var(--text-color);
+    margin-bottom: 10px;
+    height: 3rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.product-price {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.btn-add-to-cart {
+    width: 100%;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    section h2 {
+        font-size: 2rem;
+    }
     #contact .row > .col-md-4:not(:last-child) {
-        border-right: none; /* Remove vertical line on small screens */
+        border-right: none;
+        border-bottom: 1px solid #eaeaea;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
     }
 }
